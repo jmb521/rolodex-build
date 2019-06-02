@@ -1,0 +1,14 @@
+<h2>Change your password</h2>
+<form action="/users/<%=@user.id %>" method="post">
+  <input type="hidden" name="_method" value="patch" />
+  <input type="password" placeholder="Current password" name="current_password" />
+  <br />
+  <br />
+  <input type="password" placeholder="New Password" name="new_password1" />
+  <br />
+  <br />
+  <input type="password" placeholder="Type new password again" name="new_password2"/>
+  <br />
+  <br />
+  <input type="submit" value="Submit" />
+</form>

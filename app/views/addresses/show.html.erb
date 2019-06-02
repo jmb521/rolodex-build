@@ -1,0 +1,28 @@
+<h5>Name: </h5><h3><%= @address.first_name %> <%= @address.last_name %></h3>
+Address: <%= @address.address1 %>
+<br />
+Address: <%= @address.address2 %>
+
+<br />
+City: <%= @address.city %>
+
+<br />
+State: <%= @address.state %> &nbsp;&nbsp; Zipcode: <%=@address.zipcode %>
+
+<br />
+Phone Number: <%= @address.phone_number %>
+
+<br />
+Email: <%= @address.email_address %>
+
+<br />
+Comments: <%= @address.comments %>
+<br />
+<% if current_user == @address.user %>
+<a href="/addresses/<%= @address.id %>/edit">Edit</a>
+<br />
+<form action="/addresses/<%= @address.id %>/delete" method="post" >
+  <input type="hidden" name="_method" value="delete" />
+  <input type="submit" value="Delete" />
+</form>
+<% end %>

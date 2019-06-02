@@ -1,0 +1,20 @@
+
+<main>
+  <input type="radio" class="tabs" id="tab" name="tabs" checked>
+<%("A".."Z").to_a.each do |letter| %> <!-- loops through all letters in the alphabet -->
+  <input class="tabs" id="tab<%= letter %>" type="radio" name="tabs" >
+  <label for="tab<%= letter %>"><b><%= letter %></b></label>
+
+    <div id="content<%= letter %>" class="div-tabs">
+
+      <% if @addresses.key?(letter)%>
+
+        <% @addresses[letter].sort.each do |addr| %>
+          <p><%= addr %></p>
+        <% end %>
+      <% end %>
+    </div>
+
+<% end %>
+
+</main>

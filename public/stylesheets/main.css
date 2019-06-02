@@ -1,0 +1,260 @@
+@media screen {
+  /* --- Reset Styles --- */
+  * {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  html, body {
+    height: 100%;
+    width: 100%;
+  }
+
+  /* --- Welcome Page Styles --- */
+  body {
+    background-color: lightblue;
+    color: #333;
+    font-family: Sans-Serif;
+    line-height: 18px;
+  }
+
+  .wrapper {
+    background: #fff;
+    -moz-box-shadow: 0 0 10px rgba(0,0,0,.3);
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,.3);
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+    margin: 16px auto;
+    max-width: 1200px;
+    padding: 2.25%; /* 18px / 800px */
+    width: 85%;
+  }
+
+  h1 {
+    font-size: 36px;
+    line-height: 54px;
+  }
+
+  h2 {
+    border-bottom: 2px solid #ccc;
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 16px;
+  }
+
+  h3 {
+    font-size: 18px;
+    line-height: 36px;
+  }
+
+  p {
+    margin-bottom: 18px;
+  }
+
+  .main {
+    overflow: hidden;
+  }
+
+  .content {
+    float: left;
+    width: 60%; /* 480px / 800px */
+  }
+
+  .sidebar {
+    background: #eee;
+    border: 1px solid #ccc;
+    float: right;
+    padding: 2.08333333333%; /* 5px / 240px */
+    width: 30%; /* 240px / 800px */
+  }
+
+  .sidebar ul {
+    font-size: 14px;
+  }
+
+  .branding {
+    clear: both;
+  }
+
+  footer.branding {
+    border-top: 2px solid #ccc;
+    margin-top: 20px;
+    padding-top: 20px;
+  }
+  nav {
+    margin-bottom: 10px;
+    border-bottom: solid 1px grey;
+  }
+  ul.navigation {
+    list-style-type: none;
+    /*text-align: center;*/
+
+  }
+  ul.navigation li {
+    display: inline-block;
+    padding: 25px;
+
+  }
+
+
+  *,*::before,*::after{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    }
+  html,body {
+    height:100vh;
+  }
+  body {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:40px;
+    font:14px/1.5 'Open Sans',sans-serif;
+    color:#345;
+    background:#f0f2f4;
+  }
+
+  p:not(:last-child) {
+    margin: 0 0 20px;
+  }
+
+  main {
+    max-width: 1900px;
+    padding: 40px;
+    border: 1px solid rgba(0,0,0,.2);
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,.1);
+    height: auto;
+  }
+
+  div.div-tabs{
+    display: none;
+    padding: 20px 0 0;
+    border-top: 1px solid #abc;
+    /*height: 400px;*/
+    clear: left;
+    top: 200px;
+
+
+  }
+
+  input.tabs {
+    display: none;
+  }
+
+  label {
+    display: inline-block;
+    margin: 0 0 -1px;
+    padding: 15px 5px;
+    font-weight: 600;
+    text-align: center;
+    color: #abc;
+    border: 1px solid transparent;
+  }
+
+  label:before {
+    font-family: fontawesome;
+    font-weight: normal;
+    margin-right: 10px;
+  }
+
+  /*label[for*='1']:before { content: '\f1cb'; }
+  label[for*='2']:before { content: '\f17d'; }
+  label[for*='3']:before { content: '\f16c'; }
+  label[for*='4']:before { content: '\f171'; }*/
+
+  label:hover {
+    color: #789;
+    cursor: pointer;
+  }
+
+  input:checked + label {
+    color: #0af;
+    border: 1px solid #abc;
+    border-top: 2px solid #0af;
+    border-bottom: 1px solid #fff;
+  }
+
+  #tabA:checked ~ #contentA,
+  #tabB:checked ~ #contentB,
+  #tabC:checked ~ #contentC,
+  #tabD:checked ~ #contentD,
+  #tabE:checked ~ #contentE,
+  #tabF:checked ~ #contentF,
+  #tabG:checked ~ #contentG,
+  #tabH:checked ~ #contentH,
+  #tabI:checked ~ #contentI,
+  #tabJ:checked ~ #contentJ,
+  #tabK:checked ~ #contentK,
+  #tabL:checked ~ #contentL,
+  #tabM:checked ~ #contentM,
+  #tabN:checked ~ #contentN,
+  #tabO:checked ~ #contentO,
+  #tabP:checked ~ #contentP,
+  #tabQ:checked ~ #contentQ,
+  #tabR:checked ~ #contentR,
+  #tabS:checked ~ #contentS,
+  #tabT:checked ~ #contentT,
+  #tabU:checked ~ #contentU,
+  #tabV:checked ~ #contentV,
+  #tabW:checked ~ #contentW,
+  #tabX:checked ~ #contentX,
+  #tabY:checked ~ #contentY,
+  #tabZ:checked ~ #contentZ  {
+    display: block;
+
+
+  }
+
+
+  @media screen and (max-width: 800px) {
+    label {
+      font-size: 0;
+    }
+    label:before {
+      margin: 0;
+      font-size: 18px;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    label {
+      padding: 15px;
+    }
+  }
+
+
+
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    width: auto;
+  }
+
+  .content, .sidebar {
+    float: none;
+    width: 100%;
+  }
+
+  .sidebar {
+    background: transparent;
+    border: none;
+    border-top: 2px solid #ccc;
+    padding: 0;
+  }
+
+  h1 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  h2 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
